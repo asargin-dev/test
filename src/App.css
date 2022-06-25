@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Signika+Negative:300,400&display=swap");
+
+.App * {
+    font-family: "Signika Negative", sans-serif !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    width: 100% !important;
+    padding-top: 1.5rem !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.slipper-animate {
+    width: 25% !important;
+    animation: slide-image 5s linear infinite;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.animate-character {
+    background-image: linear-gradient(
+            135deg,
+            #000000 0%,
+            #3f3c3c 45%,
+            #d9d6dc 50%,
+            #3f3c3c 55%,
+            #000000 100%
+    );
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: text-clip 20s linear infinite;
+    display: inline-block;
+    font-size: 8vmin;
 }
 
-.App-link {
-  color: #61dafb;
+@keyframes text-clip {
+    0% {
+        background-position-x: -500%;
+    }
+    100% {
+        background-position-x: 500%;
+    }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes slide-image {
+    0% {
+        margin-right: 75%;
+    }
 }
+

@@ -14,7 +14,7 @@
 
 .slipper-animate {
     width: 25% !important;
-    animation: slide-image 5s linear infinite;
+    animation: slide-image 4.5s linear infinite;
 }
 
 .animate-character {

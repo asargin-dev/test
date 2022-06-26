@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <CssBaseline />
       <Container maxWidth="xl" className="container">
-        <Navbar title={"Sarace"} sections={[]} />
+        <Navbar title={"Saracee"} sections={[]} />
         <Content />
         <Footer description={"Go"} title={"Sarace"} />
       </Container>

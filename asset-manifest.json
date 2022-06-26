@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/test/static/css/main.94dbf77a.css",
+    "main.js": "/test/static/js/main.36b11bb7.js",
+    "static/js/787.43261b7f.chunk.js": "/test/static/js/787.43261b7f.chunk.js",
+    "static/media/sarace_001.jpeg": "/test/static/media/sarace_001.d007927746cab4fdb18a.jpeg",
+    "index.html": "/test/index.html",
+    "main.94dbf77a.css.map": "/test/static/css/main.94dbf77a.css.map",
+    "main.36b11bb7.js.map": "/test/static/js/main.36b11bb7.js.map",
+    "787.43261b7f.chunk.js.map": "/test/static/js/787.43261b7f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.94dbf77a.css",
+    "static/js/main.36b11bb7.js"
+  ]
+}

@@ -1,9 +1,28 @@
 import { Grid, Typography } from "@mui/material";
 // @ts-ignore
 import mapboxgl from "mapbox-gl";
+import { useEffect, useRef } from "react";
 import "../App.css";
 
 export default function Contact() {
+  const map = useRef();
+  const mapContainer = useRef(null);
+
+  useEffect(() => {
+    if (map.current) return; // initialize map only once
+    map.current = new mapboxgl.Map({
+      container: mapContainer.current,
+      accessToken:
+        "pk.eyJ1IjoidHJib3QiLCJhIjoiY2s3NmFscm1xMTV0MDNmcXFyOWp1dGhieSJ9.tR2IMHDqBPOf_AeGjHOKFA",
+      style: "mapbox://styles/mapbox/streets-v11",
+      center: [30.470827721998376, 39.78170783591696],
+      zoom: 18,
+    });
+    const marker = new mapboxgl.Marker()
+      .setLngLat([30.470827721998376, 39.78170783591696])
+      .addTo(map.current);
+  });
+
   const contactInformations = [
     { title: "Telefon", description: "0 532 685 43 62" },
     {
@@ -49,15 +68,13 @@ export default function Contact() {
           </Grid>
         ))}
       </Grid>
-      <Grid item xs={12} padding={5}>
-        <iframe
-          width="100%"
-          height="400px"
-          src="https://api.mapbox.com/styles/v1/mapbox/streets-v11.html?zoom=20&title=false&zoomwheel=false&access_token=pk.eyJ1IjoidHJib3QiLCJhIjoiY2s3NmFscm1xMTV0MDNmcXFyOWp1dGhieSJ9.tR2IMHDqBPOf_AeGjHOKFA"
-          title="Streets"
-          className="map-container"
-        ></iframe>
-      </Grid>
+      <Grid
+        ref={mapContainer}
+        className="map-container"
+        item
+        xs={12}
+        padding={5}
+      ></Grid>
     </div>
   );
 }

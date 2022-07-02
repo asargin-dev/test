@@ -122,7 +122,12 @@
 }
 
 .map-container {
-    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mapboxgl-control-container{
+    display: none;
 }
 @keyframes text-clip {
     0% {

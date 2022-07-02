@@ -7,9 +7,9 @@ import Link from "@mui/material/Link";
 function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary" align="center">
-      {"Copyright © "}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
+      {"Tüm hakları saklıdır © "}
+      <Link color="inherit" href="https://sarace.com/" className="footer-style">
+        Sarace
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}

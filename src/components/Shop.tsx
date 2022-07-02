@@ -73,8 +73,8 @@ export default function Shop() {
           xs={4}
           margin={"auto"}
           display="grid"
-          justifyContent={"center"}
-          alignItems="center"
+          justifyContent={"right"}
+          alignItems="right"
         >
           <Button
             href={
@@ -101,6 +101,10 @@ export default function Shop() {
               Mağaza Puanı:{" "}
               <Typography
                 color={"white"}
+                width={"65%"}
+                display="flex"
+                justifyContent={"center"}
+                alignItems={"center"}
                 style={{
                   border: "1px solid green",
                   borderRadius: "100%",
@@ -148,8 +152,8 @@ export default function Shop() {
           xs={4}
           margin={"auto"}
           display="grid"
-          justifyContent={"center"}
-          alignItems="center"
+          justifyContent={"left"}
+          alignItems="left"
         >
           <Button href={"https://www.n11.com/magaza/sarace"}>
             <Typography
@@ -162,15 +166,25 @@ export default function Shop() {
                 src="https://n11scdn.akamaized.net/a1/org/22/06/24/72/96/64/36/96/74/72/45/71/57583492847166994803.svg"
                 width="125"
                 height="63"
-                alt="hayat sana gelir"
+                alt="n11"
               />
             </Typography>
           </Button>
           <div style={{ display: "flex", justifyContent: "center" }}>
-            <Typography textAlign={"center"} display={"flex"} color={"white"}>
+            <Typography
+              textAlign={"center"}
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems={"center"}
+              color={"white"}
+            >
               Mağaza Puanı:{" "}
               <Typography
+                width={"70%"}
                 color={"white"}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
                 style={{
                   border: "1px solid green",
                   borderRadius: "100%",

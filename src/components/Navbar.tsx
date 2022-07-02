@@ -7,6 +7,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import "../App.css";
 import { Divider, Grid, SvgIcon } from "@mui/material";
 import divider from "../files/images/divider.png";
+import { useEffect, useState } from "react";
 
 interface HeaderProps {
   sections: ReadonlyArray<{
@@ -82,6 +83,7 @@ const Navbar = (props: HeaderProps) => {
             variant="outlined"
             size="small"
             style={{ color: "white", borderColor: "white" }}
+            href="#iletisim"
           >
             BİZE ULAŞ
           </Button>
@@ -103,7 +105,7 @@ const Navbar = (props: HeaderProps) => {
           alignItems="center"
           padding={0}
         >
-          <img src={divider} width="25%" height="100%" />
+          <img src={divider} width="30%" height="100%" />
         </Grid>
         <Grid
           item
@@ -113,12 +115,7 @@ const Navbar = (props: HeaderProps) => {
           alignItems="center"
         ></Grid>
       </Grid>
-      <Grid
-        container
-        columnSpacing={-25}
-        marginLeft={"auto"}
-        marginRight={"auto"}
-      >
+      <Grid container marginLeft={"auto"} marginRight={"auto"}>
         {sections.map((section) => (
           <Grid
             item

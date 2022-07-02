@@ -120,14 +120,8 @@
     backdrop-filter: blur(13.7px);
     -webkit-backdrop-filter: blur(13.7px);
 }
-
-.map-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.mapboxgl-control-container{
-    display: none;
+.map-container{
+    border: none;
 }
 @keyframes text-clip {
     0% {

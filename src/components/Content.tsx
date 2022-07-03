@@ -4,7 +4,7 @@ import slipper_1 from "../files/images/sarace_001.jpeg";
 import "../App.css";
 import Typography from "@mui/material/Typography";
 
-export default function Main() {
+const Content = () => {
   const aboutText = [
     {
       text: "Tüketici olarak ayaklarımızın rahat, giydiğimiz ürünlerin sağlam aynı zamanda gösterişli olmasını bekleriz.",
@@ -45,8 +45,19 @@ export default function Main() {
             {"Yere şık ve sağlam basanların tercihi"}
           </Typography>
         </Grid>
-        <Grid item xs={6} textAlign="center">
-          <img src={slipper_1} loading="lazy" className="slipper-animate" />
+        <Grid
+          item
+          xs={6}
+          display={"flex"}
+          justifyContent={"center"}
+          alignItems={"center"}
+        >
+          <img
+            src={slipper_1}
+            className="slipper-animate"
+            width={"100% !important"}
+            alt={"slipper"}
+          />
         </Grid>
       </Grid>
       <div id={"hakkimizda"}>
@@ -62,6 +73,7 @@ export default function Main() {
                 src={
                   "https://img.icons8.com/material-two-tone/48/000000/slippers.png"
                 }
+                alt={"slippers"}
               />
             </Divider>
           </Grid>
@@ -98,12 +110,9 @@ export default function Main() {
             item
             xs={6}
             margin={"auto"}
-            display={"flex"}
+            display={"grid"}
             justifyContent={"center"}
             alignItems={"center"}
-            paddingX={-30}
-            paddingLeft={5}
-            paddingRight={5}
           >
             <Box padding={1} paddingTop={3} className="vision-boxes">
               <Typography textAlign={"center"} fontWeight={"bold"}>
@@ -112,6 +121,7 @@ export default function Main() {
                     src={
                       "https://img.icons8.com/external-chloe-kerismaker/64/000000/external-Vision-business-management-chloe-kerismaker.png"
                     }
+                    alt={"vision"}
                   />
                 </Typography>
                 VİZYONUMUZ
@@ -128,11 +138,10 @@ export default function Main() {
           <Grid
             item
             xs={6}
-            display={"flex"}
+            margin={"auto"}
+            display={"grid"}
             justifyContent={"center"}
             alignItems={"center"}
-            paddingLeft={5}
-            paddingRight={5}
           >
             <Box padding={1} paddingTop={3} className="mission-boxes">
               <Typography textAlign={"center"} fontWeight={"bold"}>
@@ -141,6 +150,7 @@ export default function Main() {
                     src={
                       "https://img.icons8.com/color/96/000000/mission-of-a-company.png"
                     }
+                    alt={"mission"}
                   />
                 </Typography>
                 MİSYONUMUZ
@@ -166,4 +176,6 @@ export default function Main() {
       </div>
     </div>
   );
-}
+};
+
+export default Content;

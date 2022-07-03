@@ -7,7 +7,6 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import "../App.css";
 import { Divider, Grid, SvgIcon } from "@mui/material";
 import divider from "../files/images/divider.png";
-import { useEffect, useState } from "react";
 
 interface HeaderProps {
   sections: ReadonlyArray<{
@@ -43,13 +42,13 @@ const Navbar = (props: HeaderProps) => {
             }
           >
             <Link href="https://twitter.com/bySarace">
-              <TwitterIcon style={{ color: "#1DA1F2" }}></TwitterIcon>
+              <TwitterIcon style={{ color: "#1DA1F2" }} />
             </Link>
             <Link href="https://www.facebook.com/bysarace">
-              <SvgIcon className="facebook"></SvgIcon>
+              <SvgIcon className="facebook" />
             </Link>
             <Link href="https://www.instagram.com/saraceonline/">
-              <SvgIcon className="instagram"></SvgIcon>
+              <SvgIcon className="instagram" />
             </Link>
           </Stack>
         </Grid>
@@ -96,7 +95,7 @@ const Navbar = (props: HeaderProps) => {
           display="flex"
           justifyContent="center"
           alignItems="center"
-        ></Grid>
+        />
         <Grid
           item
           xs={8}
@@ -105,7 +104,7 @@ const Navbar = (props: HeaderProps) => {
           alignItems="center"
           padding={0}
         >
-          <img src={divider} width="30%" height="100%" />
+          <img src={divider} width="30%" height="100%" alt={"divider"} />
         </Grid>
         <Grid
           item
@@ -113,7 +112,7 @@ const Navbar = (props: HeaderProps) => {
           display="flex"
           justifyContent="center"
           alignItems="center"
-        ></Grid>
+        />
       </Grid>
       <Grid container marginLeft={"auto"} marginRight={"auto"}>
         {sections.map((section) => (

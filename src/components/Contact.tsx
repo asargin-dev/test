@@ -57,7 +57,7 @@ export default function Contact() {
           className="map-container"
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-        ></iframe>
+        />
       </Grid>
     </div>
   );
